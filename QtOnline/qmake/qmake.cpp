@@ -57,7 +57,7 @@ int main(int argc, char *argv[])//原先
 	w.setLayout(mainLayout);
 	//显示窗口
 	w.show();
+	//改变窗口名称
 	w.setWindowTitle("running");
-	
 	return app.exec();//原先
 }
