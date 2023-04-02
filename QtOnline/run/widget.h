@@ -2,7 +2,7 @@
 #define WIDGET_H  //原先
 
 #include <QWidget>  //原先
-#include <QProcess>
+#include <QProcess>  //启动新的进程需要包含的头文件
 #include <QMessageBox>
 
 namespace Ui {    //原先
