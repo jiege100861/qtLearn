@@ -17,7 +17,7 @@ public:
     explicit Widget(QWidget *parent = 0);    //原先
     ~Widget();
 
-private slots:
+private slots:                            //转到槽后，会自动添加的slots                          
     void on_commitButton_clicked();         
     void on_cancelButton_clicked();
 
