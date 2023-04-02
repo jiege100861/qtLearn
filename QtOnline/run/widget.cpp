@@ -1,11 +1,11 @@
-#include "widget.h"
-#include "ui_widget.h"
+#include "widget.h"          //原先
+#include "ui_widget.h"          //原先
 
-Widget::Widget(QWidget *parent) :
-    QWidget(parent),
+Widget::Widget(QWidget *parent) :           //原先
+    QWidget(parent), 
     ui(new Ui::Widget)
 {
-    ui->setupUi(this);
+    ui->setupUi(this);                //原先
 
     //连接信号与槽  谁发出信号 发出什么信号 谁处理信号 怎么处理
     connect(ui->cmdLineEdit, SIGNAL(returnPressed()), this, SLOT(on_commitButton_clicked()));
@@ -18,7 +18,7 @@ Widget::Widget(QWidget *parent) :
     });
 }
 
-Widget::~Widget()
+Widget::~Widget()           //原先
 {
     delete ui;
 }
