@@ -1,28 +1,28 @@
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef WIDGET_H  //原先
+#define WIDGET_H  //原先
 
-#include <QWidget>
+#include <QWidget>  //原先
 #include <QProcess>
 #include <QMessageBox>
 
-namespace Ui {
-class Widget;
-}
+namespace Ui {    //原先
+class Widget;     //原先
+} 
 
-class Widget : public QWidget
+class Widget : public QWidget    //原先
 {
     Q_OBJECT
-
+   
 public:
-    explicit Widget(QWidget *parent = 0);
+    explicit Widget(QWidget *parent = 0);    //原先
     ~Widget();
 
 private slots:
-    void on_commitButton_clicked();
+    void on_commitButton_clicked();         
     void on_cancelButton_clicked();
 
-private:
+private:                          //原先
     Ui::Widget *ui;
 };
 
-#endif // WIDGET_H
+#endif // WIDGET_H             //原先
