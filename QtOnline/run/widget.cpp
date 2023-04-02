@@ -35,4 +35,5 @@ void Widget::on_commitButton_clicked()
 void Widget::on_cancelButton_clicked()       //源文件转到槽后会自动加这个                           
 {                                            //头文件也会增加slots
     this->close();               //这个不是自动加的
+    //执行这句，相当于启动新的进程，头文件要包含
 }
